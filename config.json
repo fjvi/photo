@@ -10,5 +10,5 @@
   "css": "./custom.css",
   "footer": "Copyright Text",
   "usage-stats": false,
-  "script":"<<script src='../note/assets/imgca.js'></script>"}
+  "script":"<<script src='../note/assets/imgca.js'></script>"
 }
