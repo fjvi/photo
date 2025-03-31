@@ -1,96 +1,96 @@
-# Github Pages Gallery
-Host your photo/video gallery in Github pages easily using Thumbsup & Github Actions for free.
+# Github 页面图库
+使用 Thumbsup 和 Github Actions 免费轻松地在 Github 页面上托管您的照片/视频库。
 
-### Why this project?
-This project contains starter code for anyone who wants to deploy his/her photo/video galery on Github Pages,
-**Zero Coding Needed**. Since Github pages is a free hosting service offered by Github to host static pages, it
-offers a decent bandwidth. So it is a great choice for photographers to showcase their works. Github Actions is a CI & CD
-platform that offers unlimited builds for open source projects. Combining the power of GitHub pages with Github Actions is
-a zero dollar solution to get your gallery online.
+### 为什么要这个项目？
+该项目包含入门代码，适用于想要在 Github Pages 上部署其照片/视频库的任何人，
+**无需任何编码**。由于 Github pages 是 Github 提供的免费托管服务，用于托管静态页面，因此
+提供不错的带宽。因此，对于摄影师来说，这是一个展示作品的绝佳选择。Github Actions 是一个 CI & CD
+为开源项目提供无限构建的平台。将 GitHub 页面的强大功能与 Github Actions 结合起来，
+一个零美元的解决方案，让您的画廊在线。
 
-### How to use
-Follow the steps below to get your Gallery online. You will be using GitHub web interface to do everything.
-:wink: No frustrating CLIs:
-1. SignUp for a Github account and verify your email ID: https://github.com/join
-2. Click on the use this template button:
+### 如何使用
+按照以下步骤将您的 Gallery 联机。您将使用 GitHub 网页界面完成所有操作。
+:wink: 没有令人沮丧的 CLI：
+1. 注册 Github 账户并验证你的邮箱地址：https://github.com/join
+2. 点击使用此模板按钮：
 
-![template](https://user-images.githubusercontent.com/8397274/103133407-40d86f00-46d0-11eb-82f2-edb4a0a30333.png)
+![template](https://user-images.githubusercontent.com/8397274/103133407-40d86f00-46d0-11eb-82f2-edb4a0a30333.png) 
 
-3. Type a Name for your new repository
+3. 为你的新仓库输入一个名称
 
-![name](https://user-images.githubusercontent.com/8397274/103133448-88f79180-46d0-11eb-87ee-8da7a7d63473.png)
+![name](https://user-images.githubusercontent.com/8397274/103133448-88f79180-46d0-11eb-87ee-8da7a7d63473.png) 
 
-4. Click on the settings tab. Click on the **Pages** option under the **Code and automation** section. Make sure that you have the **GitHub actions** selected as the **Source** for the GitHub pages.
-   ![Pages](https://user-images.githubusercontent.com/8397274/222885316-edd4dad3-fcdd-4c23-ad3a-dd96fa8bc426.png)
+4. 点击设置选项卡。点击 **代码和自动化** 部分下的 **页面** 选项。确保你已选择 **GitHub 操作** 作为 GitHub 页面的 **来源**。
+   ![Pages](https://user-images.githubusercontent.com/8397274/222885316-edd4dad3-fcdd-4c23-ad3a-dd96fa8bc426.png) 
 
-5. Edit [config.json](config.json) by clicking on the edit button in the newly created repository under your account:
+5. 点击您帐户下新创建的存储库中的编辑按钮来编辑 [config.json](config.json)：
 
 ```
 {
-  "input": "./gallery",
-  "output": "./build_output",
-  "title": "Photo Gallery", // Set your gallery title here
-  "sort-albums-by": "title",
-  "sort-media-by": "filename",
-  "download-photos": "copy",
-  "cleanup": true,
-  "theme": "cards", // Your theme
-  "css": "./custom.css",
-  "footer": "Copyright Text", // Set your copyright text here
-  "usage-stats": false
+  “输入”：“。/画廊”，
+  “输出”：“。/build_output”，
+  "title": "照片库",// 在此设置您的图库标题
+  "sort-albums-by": "标题",
+  "sort-media-by": "文件名",
+  "下载照片": "复制",
+  “清理”：真，
+  "theme": "cards", // 你的主题
+  “css”：“。/custom.css”，
+  “footer”：“版权文本”，//在此设置您的版权文本
+  “使用情况统计”：false
 }
 ```
-You can chose from any of the themes below to set the value for theme key:
+您可以从以下任意主题中选择来设置主题键的值：
 * `mosaic` - https://thumbsup.github.io/demos/themes/mosaic/
-* `cards` - https://thumbsup.github.io/demos/themes/cards/
-* `classic` - https://thumbsup.github.io/demos/themes/classic/
-* `flow` - https://thumbsup.github.io/docs/4-themes/built-in/ (no demo available)
+* `卡片` - https://thumbsup.github.io/demos/themes/cards/
+* `经典` - https://thumbsup.github.io/demos/themes/classic/
+* `flow` - https://thumbsup.github.io/docs/4-themes/built-in/ (无可用演示)
 
-You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
+您可以在此处了解有关配置文件的更多信息：https://thumbsup.github.io/docs/3-configuration/usage/。单击页面下方的提交更改按钮。
 
-6. Go to actions tab of your new repository, Wait till the Initial build completes. It will show you the following check mark:
-![actions](https://user-images.githubusercontent.com/8397274/103133265-7af54100-46cf-11eb-9cef-38fa122142aa.png)
-7. You are all set with your new awesome gallery! Add Albums or photos to make it live.
+6. 转到新存储库的操作选项卡，等到初始构建完成。它将显示以下复选标记：
+![操作](https://user-images.githubusercontent.com/8397274/103133265-7af54100-46cf-11eb-9cef-38fa122142aa.png)
+7. 您已设置好新的精彩图库！添加相册或照片即可让其上线。
 
-#### Demo Video
-[![demo](http://img.youtube.com/vi/uYh7b2V0pyA/0.jpg)](http://www.youtube.com/watch?v=uYh7b2V0pyA "Github Pages Gallery Demo")
-
-
-#### Adding a new album to gallery
-1. Go to the gallery folder of the forked repo.
-2. Click on Create a new file button.
-3. Type AlbumName/.gitkeep in the input box
-4. Click Commit Changes button at the bottom.
-
-![newfolder](https://media.giphy.com/media/455paOHOAWr4KWNOtg/giphy.gif)
-
-#### Adding Medias
-1. Go to gallery folder. Open any albums if any.
-2. Click on Upload files button
-3. Select files. Once it finishes upload, click Commit Changes button.
-
-![selectmedia](https://media.giphy.com/media/2uIfenjYx5anbQOEAo/giphy.gif)
-
-#### Finding your website URL
-If you had done all the above steps then your website will be live now. Please check Github Actions tab in your repository for the sttaus of the
-deployment.  Once it is done, Go to settings tab again and scroll down to the Github Pages section to find your public gallery URL.
-
-![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
-
-## Limitations
-* Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
-> If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by GitHub) of other GitHub customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
-
-* File size limit (100 MB) & Repo size limit (75 GB) & Upload limit(25MB): Github limits the maximum usable filesize as 100MB for all files. This is enough for most users. It also imposes a repo size limit of 75GB. If you add a file to a repository via a browser, the file can be no larger than 25 MB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
+#### 演示视频
+[![demo](http://img.youtube.com/vi/uYh7b2V0pyA/0.jpg)](http://www.youtube.com/watch?v=uYh7b2V0pyA "Github 页面图库演示")
 
 
-## Tools Used
-* [Github Actions](https://github.com/features/actions) For continuous deployment.
-* [Thumbsup](https://thumbsup.github.io/) for gallery static page generation.
-* [GithHub Pages](https://pages.github.com/) for hosting.
+#### 将新相册添加到画廊
+1. 进入分叉 repo 的画廊文件夹。
+2. 单击创建新文件按钮。
+3.在输入框中输入AlbumName/.gitkeep
+4. 点击底部的提交更改按钮。
 
-### History
-* This project was using Travis CI Initially, Migrated to Github Actions for better speed and reliabilty. Travis stopped providing free unlimited builds for open source projects.
+![newfolder](https://media.giphy.com/media/455paOHOAWr4KWNOtg/giphy.gif) 
 
-## Contributing
-Feel free to make any changes and submit a PR.
+#### 添加媒体
+1. 进入图库文件夹。如果有相册，请打开。
+2. 点击上传文件按钮
+3. 选择文件。上传完成后，点击提交更改按钮。
+
+![selectmedia](https://media.giphy.com/media/2uIfenjYx5anbQOEAo/giphy.gif) 
+
+#### 查找您的网站网址
+如果你已完成上述所有步骤，那么你的网站现在就可以上线了。请查看你的存储库中的 Github Actions 选项卡，了解
+部署。完成后，再次转到设置选项卡并向下滚动到 Github Pages 部分以找到您的公共画廊 URL。
+
+![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png) 
+
+## 限制
+* Github Pages [服务条款](https://help.github.com/articles/github-terms-of-service/):
+> 如果您的带宽使用量明显超过其他 GitHub 客户的平均带宽使用量（由 GitHub 独自决定），我们保留立即禁用您的帐户或限制您的文件托管的权利，直到您可以减少带宽消耗为止。
+
+* 文件大小限制（100 MB）和 Repo 大小限制（75 GB）和上传限制（25MB）：Github 将所有文件的最大可用文件大小限制为 100MB。这对大多数用户来说已经足够了。它还规定了 75GB 的 repo 大小限制。如果您通过浏览器将文件添加到存储库，则文件不能大于 25 MB。请访问 https://help.github.com/articles/what-is-my-disk-quota/ 了解更多信息。
+
+
+使用的工具
+* [Github Actions](https://github.com/features/actions) 用于持续部署。
+* [Thumbsup](https://thumbsup.github.io/) 用于生成图库静态页面。
+* [GithHub Pages](https://pages.github.com/) 用于托管。
+
+### 历史记录
+* 该项目最初使用 Travis CI，为了提高速度和可靠性，已迁移到 Github Actions。Travis 停止为开源项目提供免费的无限构建。
+
+## 贡献
+请随意进行任何更改并提交 PR。
